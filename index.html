@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>2much_tech - HSL LED Lightbulb</title>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700;900&amp;display=swap'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container">
+  <div class="flexrow">
+    <div class="flexcol">
+      <div class="lightbulb">
+       <img src="https://assets.codepen.io/2273448/lightbulb.svg" alt="lightbulb illustration" />
+       
+       <div class="lightcolor" id="light-color-changer"></div>
+       <div class="lightshine"></div>
+      </div>
+    </div><!--end col -->
+    
+    <div class="flexcol flexcol--half">
+      <div class="component-container">
+        <div class="component-title">Hue</div>
+        
+        <div class="color-slider-metrics">
+          <span>red</span>
+          <span>orange</span>
+          <span>yellow</span>
+          <span>lime</span>
+          <span>green</span>
+          <span>cyan</span>
+          <span>blue</span>
+          <span>indigo</span>
+          <span>purple</span>
+          <span>magenta</span>
+          <span>red</span>
+        </div>
+        <input type="range" min="0" max="360" value="180" class="color-slider color-slider--hue" id="slider-hue">
+
+        <div class="color-slider-value">
+          <div id="current-hue-value"><span>value</span></div>
+        </div>
+      </div><!--end color slider -->
+
+      
+      <div class="component-container">
+        <div class="component-title">Saturation</div>
+          <div class="color-slider-metrics">
+            <span>0</span>
+            <span>100</span>
+          </div>
+        <input type="range" min="0" max="100" value="50" class="color-slider color-slider--saturation" id="slider-saturation">
+
+        <div class="color-slider-value">
+          <div id="current-saturation-value"><span>value</span></div>
+        </div>
+      </div><!--end color slider -->
+
+      <div class="component-container">
+        <div class="component-title">Lightness</div>
+        <div class="color-slider-metrics">
+          <span>0</span>
+          <span>100</span>
+        </div>
+        <input type="range" min="0" max="100" value="50" class="color-slider color-slider--lightness" id="slider-lightness">
+
+        <div class="color-slider-value">
+          <div id="current-lightness-value"><span>value</span></div>
+        </div>
+      </div><!--end color slider -->
+    </div><!--end col -->
+  </div><!--end row -->
+</div><!--end container -->
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
